@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\App\\chungchisa.jks')
+            storePassword '09112001'
+            keyAlias = 'trungnhan.name.vn'
+            keyPassword '09112001'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+    defaultConfig {
+        applicationId "vn.name.trungnhan.eword"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 21
+        versionName '1.2.7.6'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+        //tat tam
+        //  lintOptions {
+        //      checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        //  abortOnError false
+        //  }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            //   multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    def uploadServiceVersion = "3.4"
+
+    //noinspection GradleDependency
+    implementation "net.gotev:uploadservice:$uploadServiceVersion"
+
+}

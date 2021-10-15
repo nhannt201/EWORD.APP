@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/nen"
+    tools:context=".Game">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_gm"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="352dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.393">
+        <Button
+            android:id="@+id/bt_gm3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/nhinhinhdoan" />
+        <Button
+            android:id="@+id/bt_gm1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game1" />
+        <Button
+            android:id="@+id/bt_gm1_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game2" />
+        <Button
+            android:id="@+id/bt_gm1_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game3" />
+
+        <Button
+            android:id="@+id/bt_gm2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game4" />
+        <Button
+            android:id="@+id/bt_gm2_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game5" />
+        <Button
+            android:id="@+id/bt_gm2_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin = "10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/bt_game6" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

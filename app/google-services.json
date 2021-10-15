@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916248984616",
+    "firebase_url": "https://eword-mobile.firebaseio.com",
+    "project_id": "eword-mobile",
+    "storage_bucket": "eword-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916248984616:android:e8b73d1e6da0c99dc7091d",
+        "android_client_info": {
+          "package_name": "vn.name.trungnhan.eword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916248984616-ou0pptm85rad95h3hklea5mcjkvptvmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDirHN-IPp86n9UumzXHeEicTs_e6lXh6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916248984616-ou0pptm85rad95h3hklea5mcjkvptvmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
